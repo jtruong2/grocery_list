@@ -1,0 +1,4 @@
+<h1><%= @user.name %>'s grocery list</h1>
+<% @grocery_list.each do |list| %>
+  <p><a href="/grocery_lists/<%= list.id %>"><%= list.name %></a></p>
+<% end %>
